@@ -187,6 +187,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (!dropList.classList.contains('hidden')) {
 				dropList.classList.add('hidden');
 			}
+			footerDesign.innerHTML = footer[thisLang].footerDesign;
+			footerSub.innerHTML = footer[thisLang].footerSub;
+			footerNick.innerHTML = footer[thisLang].footerNick;
+			footerSub.appendChild(footerNick);
 		})
 	});
 
@@ -198,9 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
-	footerDesign.innerHTML = footer[thisLang].footerDesign;
-	footerSub.innerHTML = footer[thisLang].footerSub;
-	footerNick.innerHTML = footer[thisLang].footerNick;
+	
 
 });
 
