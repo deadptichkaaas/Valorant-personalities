@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 			// MAIN MENU ======================================================================
-			const mainTitle = document.querySelector('.main__subscribe');
 
 			function stylePage() {
 				const mainTitle = document.querySelector('.main__subscribe');
@@ -163,26 +162,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			styleCountry();
 
-			
-
-			function styleKind() {
-				const kindCard = document.querySelectorAll('.card-nameabil');
-
-				if (thisLang !== 'eu') {
-					kindCard.forEach(element => {
-						element.style.fontFamily = 'Roboto Condensed';
-						element.style.fontWeight = 700;
-						element.style.fontSize = 30 + 'px';
-					});
-				} else {
-					kindCard.forEach(element => {
-						element.style.fontFamily = 'Druk Wide';
-						element.style.fontWeight = 500;
-						element.style.fontSize = 24 + 'px';
-					});
-				}
-
-			}
 			// --------------------------------------------
 			if (!dropList.classList.contains('hidden')) {
 				dropList.classList.add('hidden');
@@ -192,9 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			footerNick.innerHTML = footer[thisLang].footerNick;
 			footerSub.appendChild(footerNick);
 		})
-
 	});
-
 
 	// HIDE ELEM ON CLICK TO EMPTY SPACE
 	document.addEventListener('click', function (e) {
@@ -202,8 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			dropList.classList.add('hidden');
 		}
 	})
-
-
 
 });
 
