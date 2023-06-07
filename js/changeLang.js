@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			dropList.classList.add('hidden');
 		}
 	})
-
 });
 
 
