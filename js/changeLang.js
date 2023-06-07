@@ -178,7 +178,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (e.target !== select) {
 			dropList.classList.add('hidden');
 		}
-	})
+	});
+	
+	
 });
 
 
