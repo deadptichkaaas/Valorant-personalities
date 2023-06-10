@@ -310,14 +310,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			if (Math.abs(xDiff) < Math.abs(yDiff)) {
 				if (yDiff > 0) {
-					// console.log('bottom')
+
 					window.scroll({
 						top: -x2,
 						left: 0,
 						behavior: 'smooth'
 					});
 				} else {
-					// console.log('top')
 					window.scroll({
 						top: x2,
 						left: 0,
@@ -365,10 +364,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 	}
-
-
-
-
 	// SLIDER 2
 
 
